@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+}
+.homeContainer {
+  background: transparent url("../../assets/Web\ 1920\ –\ 1@2x.png") no-repeat
+    center / cover;
+}
+
+.myWidth {
+  width: fit-content;
+  border: 1px solid #ea580c;
+  background-color: #ea5a0c30;
+
+  color: #ea580c;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    135deg,
+    rgb(249, 115, 22),
+    rgb(234, 88, 12)
+  );
+  display: inline;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.btn-linear {
+  transition: all 0.3s;
+}
+.btn-linear:hover {
+  border: 1px solid #ea580c;
+  background-color: #ea5a0c4d;
+  color: #ea580c;
+}
+.bi.bi-arrow-left {
+  transition: all 0.3s;
+}
+.boxs {
+  width: fit-content;
+}
+.boxs div {
+  transition: all 0.4s;
+}
+.boxs div:hover {
+  transform: scale(1.1);
+}
+
+.orangeIcon {
+  color: #ea580c;
+  font-size: 30px;
+}
+
+.gradientBG {
+  background: transparent;
+  background: linear-gradient(
+    280deg,
+    rgba(148, 55, 0, 0.662) 0%,
+    rgba(31, 16, 0, 0.603) 11%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.hoverEffect {
+  border: 1px solid rgba(255, 255, 255, 0.639);
+  transition: all 0.2s;
+}
+.hoverEffect h3 {
+  transition: all 0.2s;
+}
+a {
+  transition: all 0.3s;
+}
+
+.hoverEffect:hover a {
+  display: flex;
+  transition: all 0.3s;
+  gap: 10px;
+}
+.hoverEffect:hover {
+  border: 1px solid #ea580c;
+  /* color: #ea580c; */
+}
+.hoverEffect:hover h3 {
+  color: #ea580c;
+}

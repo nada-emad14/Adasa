@@ -1,0 +1,24 @@
+
+.homeContainer {
+  background: transparent url("../../assets/Web\ 1920\ –\ 1@2x.png") no-repeat
+    center / cover;
+}
+
+.myWidth {
+  width: fit-content;
+  border: 1px solid #ea580c;
+  background-color: #ea5a0c30;
+
+  color: #ea580c;
+}
+.gradientText {
+  background-image: linear-gradient(
+    135deg,
+    rgb(249, 115, 22),
+    rgb(234, 88, 12)
+  );
+  display: inline;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

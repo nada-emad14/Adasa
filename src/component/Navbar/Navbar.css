@@ -1,0 +1,71 @@
+.image {
+  width: 50px;
+  height: 50px;
+}
+
+.orangeTXT {
+  color: #f97316;
+}
+.linearBG {
+  background: #f97316;
+  background: linear-gradient(135deg, rgb(249, 115, 22), rgb(234, 88, 12));
+  color: white;
+   transition: all 0.3s;
+}
+
+.btn:link,
+.btn:visited {
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+    color: white;
+
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+
+}
+
+.btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.4s;
+
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.beActive {
+  background: #f97316;
+  background: linear-gradient(135deg, rgb(249, 115, 22), rgb(234, 88, 12));
+  color: white;
+  border-radius: 20px;
+  height: 100%;
+}
