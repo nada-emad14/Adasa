@@ -138,9 +138,10 @@ export default function About() {
             <i className="fa-regular fa-envelope" />
             تواصل معنا
           </button>
+          <Link to={"/blogs"}>
           <button className="w-full sm:w-fit border py-2 sm:py-3 sm:px-5 font-semibold text-base sm:text-lg rounded-xl hover:bg-white hover:text-black hover:border-white cursor-pointer box-border shadow transition-colors duration-300 ease-in-out">
             تصفح المقالات
-          </button>
+          </button></Link>
         </div>
       </div>
     </>
