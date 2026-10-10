@@ -141,7 +141,7 @@ export default function Footer() {
             <p className="text-white/40 text-sm font-medium sm:max-w-64 my-3">
               اشترك للحصول على أحدث المقالات والتحديثات.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col gap-3">
             <input
               type="text"
               id="input-group-1"
