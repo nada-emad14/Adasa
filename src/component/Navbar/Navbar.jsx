@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import logo from "../../assets/logo-GdqARQRt.png";
-import "./Navbar.css"; // احتفظ بملف الـ CSS إذا كان يحتوي على خطوط مخصصة مثل tajawal-bold
+import "./Navbar.css";
 import { Link } from "react-router";
 import { useLocation } from "react-router";
 export default function Navbar() {
@@ -80,16 +80,16 @@ export default function Navbar() {
               type="button"
               onClick={() => setIsMenuOpen(true)}
               className="
-    lg:hidden
-    w-10 h-10
-    flex items-center justify-center
-    rounded-full
-    text-white/80
-    hover:text-orange-500
-    hover:bg-orange-500/10
-    transition-all duration-300
-    cursor-pointer
-  "
+                lg:hidden
+                w-10 h-10
+                flex items-center justify-center
+                rounded-full
+                text-white/80
+                hover:text-orange-500
+                hover:bg-orange-500/10
+                transition-all duration-300
+                cursor-pointer
+              "
               aria-label="فتح القائمة"
             >
               <i className="fa-solid fa-bars text-xl" />
@@ -105,28 +105,28 @@ export default function Navbar() {
         {/* Mobile Sidebar */}
         <div
           className={`
-    fixed inset-0 z-40 lg:hidden
-    transition-all duration-300
-    ${
-      isMenuOpen
-        ? "visible bg-black/60"
-        : "invisible bg-transparent pointer-events-none"
-    }
-  `}
+            fixed inset-0 z-40 lg:hidden
+            transition-all duration-300
+            ${
+              isMenuOpen
+                ? "visible bg-black/60"
+                : "invisible bg-transparent pointer-events-none"
+            }
+          `}
           onClick={closeMenu}
         >
           {/* Sidebar */}
           <aside
             onClick={(e) => e.stopPropagation()}
             className={`
-      absolute top-0 right-0
-      h-full w-72 max-w-[85%]
-      bg-neutral-950
-      border-l border-gray-800
-      shadow-2xl
-      transition-transform duration-300 ease-in-out
-      ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
-    `}
+              absolute top-0 right-0
+              h-full w-72 max-w-[85%]
+              bg-neutral-950
+              border-l border-gray-800
+              shadow-2xl
+              transition-transform duration-300 ease-in-out
+              ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+            `}
           >
             {/* Sidebar Header */}
             <div className="flex items-center justify-between px-5 py-5 border-b border-gray-800">
@@ -151,15 +151,15 @@ export default function Navbar() {
                 type="button"
                 onClick={closeMenu}
                 className="
-          w-9 h-9
-          flex items-center justify-center
-          rounded-full
-          text-white/70
-          hover:text-orange-500
-          hover:bg-orange-500/10
-          transition-all duration-300
-          cursor-pointer
-        "
+                  w-9 h-9
+                  flex items-center justify-center
+                  rounded-full
+                  text-white/70
+                  hover:text-orange-500
+                  hover:bg-orange-500/10
+                  transition-all duration-300
+                  cursor-pointer
+                "
                 aria-label="إغلاق القائمة"
               >
                 <i className="fa-solid fa-xmark text-xl" />
@@ -175,18 +175,18 @@ export default function Navbar() {
                     to="/"
                     onClick={closeMenu}
                     className={`
-              flex items-center gap-3
-              w-full
-              px-4 py-3
-              rounded-xl
-              no-underline
-              transition-all duration-300
-              ${
-                location.pathname === "/"
-                  ? "bg-orange-500/10 text-orange-500"
-                  : "text-white/80 hover:bg-white/5 hover:text-orange-500"
-              }
-            `}
+                      flex items-center gap-3
+                      w-full
+                      px-4 py-3
+                      rounded-xl
+                      no-underline
+                      transition-all duration-300
+                      ${
+                        location.pathname === "/"
+                          ? "bg-orange-500/10 text-orange-500"
+                          : "text-white/80 hover:bg-white/5 hover:text-orange-500"
+                      }
+                    `}
                   >
                     <i className="fa-solid fa-house w-5 text-center" />
                     <span>الرئيسية</span>
@@ -199,19 +199,19 @@ export default function Navbar() {
                     to="/blogs"
                     onClick={closeMenu}
                     className={`
-              flex items-center gap-3
-              w-full
-              px-4 py-3
-              rounded-xl
-              no-underline
-              transition-all duration-300
-              ${
-                location.pathname === "/blogs" ||
-                location.pathname.startsWith("/blogsdetails/")
-                  ? "bg-orange-500/10 text-orange-500"
-                  : "text-white/80 hover:bg-white/5 hover:text-orange-500"
-              }
-            `}
+                      flex items-center gap-3
+                      w-full
+                      px-4 py-3
+                      rounded-xl
+                      no-underline
+                      transition-all duration-300
+                      ${
+                        location.pathname === "/blogs" ||
+                        location.pathname.startsWith("/blogsdetails/")
+                          ? "bg-orange-500/10 text-orange-500"
+                          : "text-white/80 hover:bg-white/5 hover:text-orange-500"
+                      }
+                    `}
                   >
                     <i className="fa-solid fa-newspaper w-5 text-center" />
                     <span>المدونة</span>
@@ -224,13 +224,13 @@ export default function Navbar() {
                     to="/about"
                     onClick={closeMenu}
                     className={`
-              flex items-center gap-3
-              w-full
-              px-4 py-3
-              rounded-xl
-              no-underline
-              transition-all duration-300
-              ${
+                      flex items-center gap-3
+                      w-full
+                      px-4 py-3
+                      rounded-xl
+                      no-underline
+                      transition-all duration-300
+                      ${
                 location.pathname === "/about"
                   ? "bg-orange-500/10 text-orange-500"
                   : "text-white/80 hover:bg-white/5 hover:text-orange-500"
@@ -249,17 +249,17 @@ export default function Navbar() {
                   to="/blogs"
                   onClick={closeMenu}
                   className="
-            flex items-center justify-center gap-2
-            w-full
-            py-3 px-4
-            rounded-xl
-            linearBG
-            text-white
-            no-underline
-            tajawal-bold
-            hover:-translate-y-1
-            transition-transform duration-300
-          "
+                    flex items-center justify-center gap-2
+                    w-full
+                    py-3 px-4
+                    rounded-xl
+                    linearBG
+                    text-white
+                    no-underline
+                    tajawal-bold
+                    hover:-translate-y-1
+                    transition-transform duration-300
+                  "
                 >
                   <i className="fa-solid fa-book-open" />
                   ابدأ القراءة

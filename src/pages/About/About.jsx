@@ -1,6 +1,7 @@
 import { BounceLoader } from "react-spinners";
 import posts from "../../posts.json";
 import AuthorCard from "../../component/AuthorCard/AuthorCard";
+import { Link } from "react-router";
 
 export default function About() {
   const postsArray = posts?.posts || [];
